@@ -4,8 +4,10 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'Nunito', sans-serif;
 }
 
+span{
+    font-weight: bold;
+}
 .table{
-    width: 50%;
     border-radius: 25px;
     border-collapse: collapse;
 }
@@ -16,7 +18,33 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .comment-container{
-    background-color: grey;
+    background-color: #fff;
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btnEmit{
+    float: right;
+    background-color: #de702b;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color:white;
+    font-weight: bold;
+}
+
+.btnEmit:hover{
+    background-color: #c94e00;
+}
+
+.title{
+    color:white;
+    font-weight: 700;
+    font-size: 30px;
 }

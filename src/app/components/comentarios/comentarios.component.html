@@ -2,12 +2,14 @@
   <table class="table">
     
       <tr class="t-header" >
-        <th><h2>Comentarios</h2></th>
+        <th><h2 class="title">Comentarios</h2></th>
       </tr>
-      <tr class="comment-container" *ngFor='let comment of comments'>
-          <p>Nombre: {{comment.name}}</p>
-          <p>Comentario: {{comment.body}}</p>
+      <tr *ngFor='let comment of comments'>
+        <div class="comment-container">
+          <p><span>Nombre:</span> {{comment.name}}</p>
+          <p><span>Comentario:</span> {{comment.body}}</p>
+        </div>
       </tr>
-      <button (click)="emitFecha()">Emitir</button>
+      <button class="btnEmit" (click)="emitFecha()">Emitir</button>
     </table> 
 </div>

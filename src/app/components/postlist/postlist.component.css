@@ -3,28 +3,31 @@
 h1, h2, h3, h4, h5, h6, p{
     font-family: 'Roboto', sans-serif;
 }
-table,th,td{
-    border: 1px solid black;
-}
+
 a{
     text-decoration: none;
 }
-tbody{
-    background-color: bisque;
-}
-.t-container{
-    display: flex;
-    justify-content: center;
+
+.thead{
+    border-bottom: 1.5px solid #0F3457;
 }
 
-.table{
-    width: 50%;
-    border-radius: 25px;
-    border-collapse: collapse;
+.t-container{
+    padding:5% 25%;
+    background-color: #0F3457;
+    border-radius: 20px;
+    margin:40px
+}
+
+.bg-table{
+    background-color: white;
+    padding:20px;
+    border-radius: 20px;
 }
 
 .title{
-    margin: 0 3rem;
+    padding:20px 0;
+    color:white;
 }
 .text-center{
     text-align: center;
@@ -36,15 +39,17 @@ margin-right: 10%;
 }
 
 .verbtn{
-    padding: 1px 25px;
-    background-color: chocolate;
-    border-radius: 15px;
+    padding: 0 32px;
+    background-color: transparent;
+    border-radius: 25px;
     float: right;
     cursor: pointer;
+    border: 1.5px solid #0F3457;
 }
 
 .verbtn:hover{
-    background-color: green;
+    border: 1.5px solid #2B849C;
+    color: #2B849C;
 }
 
 .bold{

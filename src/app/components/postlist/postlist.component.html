@@ -1,5 +1,9 @@
-<h2 class="title">List Post</h2>
+
 <div class="t-container">
+  <div>
+    <h2 class="title">List Post</h2>
+  </div>
+  <div class="bg-table">
   <table class="table">
     <thead>
       <tr>
@@ -12,8 +16,9 @@
         <tr *ngFor='let post of posts; let i = index'>
           <td><p class="text-center bold">{{i + 1}}</p></td>
           <td><p class="m-x-10">{{post.title}}</p></td>
-          <td><button class="verbtn text-center" [routerLink]="['/post', i+1]"><p>Ver</p></button></td>
+          <td class="border-none"><button class="verbtn text-center" [routerLink]="['/post', i+1]"><p>Ver</p></button></td>
         </tr>
       </tbody>  
     </table> 
+  </div>
 </div>

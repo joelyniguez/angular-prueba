@@ -1,8 +1,16 @@
 <!-- <p>Este es el post: {{id}} </p> -->
 <div>
-    <p>Detail post: {{post.id}}</p> <p>Ultimo comentario: {{fecha | date:'dd/mm/yyyy'}}</p> 
-    <h3>{{post.title}}</h3>
-    <p>{{post.body}}</p>
-    <app-comentarios (emitDate)=setFecha($event) [id]="post.id"></app-comentarios>
+    <div class="container">
+        <div class="details">
+            <div class="title">
+                <p>Detail post: {{post.id}}</p> 
+                <p *ngIf="fecha">Ultimo comentario: {{fecha | date:'dd/mm/yyyy'}}</p> 
+            </div>
+            <h3>{{post.title}}</h3>
+            <p>{{post.body}}</p>
+        </div>
+        <div class="comment-bg">
+            <app-comentarios (emitDate)=setFecha($event) [id]="post.id"></app-comentarios>
+        </div>
+    </div>
 </div>
-
