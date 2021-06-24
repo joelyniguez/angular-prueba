@@ -1,0 +1,13 @@
+<div class="t-container">
+  <table class="table">
+    
+      <tr class="t-header" >
+        <th><h2>Comentarios</h2></th>
+      </tr>
+      <tr class="comment-container" *ngFor='let comment of comments'>
+          <p>Nombre: {{comment.name}}</p>
+          <p>Comentario: {{comment.body}}</p>
+      </tr>
+      <button (click)="emitFecha()">Emitir</button>
+    </table> 
+</div>

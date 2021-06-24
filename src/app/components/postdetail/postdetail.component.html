@@ -1,0 +1,8 @@
+<!-- <p>Este es el post: {{id}} </p> -->
+<div>
+    <p>Detail post: {{post.id}}</p> <p>Ultimo comentario: {{fecha | date:'dd/mm/yyyy'}}</p> 
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+    <app-comentarios (emitDate)=setFecha($event) [id]="post.id"></app-comentarios>
+</div>
+
